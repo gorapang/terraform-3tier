@@ -29,7 +29,7 @@ resource "aws_subnet" "app-subnet1" {
 resource "aws_subnet" "app-subnet2" {
   vpc_id                  = aws_vpc.vpc.id  
   cidr_block              = var.app-subnet2-cidr  
-  availability_zone       = "ap-northeast-2b"    
+  availability_zone       = "ap-northeast-2c"    
   map_public_ip_on_launch = false
 
   tags = {
